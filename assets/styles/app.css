@@ -1,3 +1,73 @@
+:root{
+    --background:#FDF2CC;
+    --button:#F7C214;
+    --navColor:#00025B;
+    --textnav:white;
+}
+
 body {
-    background-color: skyblue;
+    background-image:linear-gradient(to right, rgb(247,194,20,0.2), rgb(247,194,20,0.2)), url('../images/ComfyUI_0030.png');
+    background-attachment: fixed;      
+    padding:0;
+    margin:0;  
+}
+main
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    justify-content: center;
+    align-items: center;
+}
+
+.title
+{
+    grid-area: 1 / -1 / 1 / 1;
+}
+.logo
+{
+    width:100px;
+    display: flex;
+    flex-direction: line;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: line;
+    justify-content:space-between;
+}
+nav{
+    background-color: var(--navColor);
+    flex-direction: line;
+    display: flex;
+}
+nav h2
+{
+    color:var(--textnav);
+}
+
+.component
+{
+    background-color: white;
+    width:19vw;
+    border:1px dotted black;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.component h2, p, button
+{
+    margin:2rem;
+}
+.clipper
+{
+    width:19vw;
+    height:300px;
+    border-radius: 10px 10px 0 0;
 }
